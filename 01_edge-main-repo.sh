@@ -16,9 +16,9 @@ truncate -s0 /etc/apk/repositories
 
 # write the repositories
 {
-        echo "https://dl-cdn.alpinelinux.org/alpine/edge/main"
-        echo "https://dl-cdn.alpinelinux.org/alpine/edge/community"
-        echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing"
+        echo "https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/main"
+        echo "https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/community"
+        echo "https://mirrors.tuna.tsinghua.edu.cn/alpine/edge/testing"
 } >> /etc/apk/repositories
 
 ###############################################################
@@ -27,3 +27,4 @@ truncate -s0 /etc/apk/repositories
 
 apk update
 apk upgrade
+apk add gcompat
